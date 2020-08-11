@@ -1,0 +1,29 @@
+.TextoFormulario {
+    @include tipografia ($tsecundaria, 2rem, 500, $violeta);
+}
+
+.form-control:focus {
+    border-color: $amarillo;
+    
+  }
+
+
+
+.BotonC { 
+    border: none;
+	padding: 10px; /*espacio alrededor texto*/
+	background-color: $violeta;
+	text-transform: uppercase; 
+    border-radius: 20px;
+	@include tipografia ($tsecundaria, 2rem, 500, $blanco);
+		&:hover {
+			background-color: $amarillo;
+			color: $blanco;
+            text-decoration: none;
+            border: none;
+		}
+}
+
+
+
+

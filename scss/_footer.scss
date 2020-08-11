@@ -1,0 +1,38 @@
+footer {
+	display: flex;
+	flex-direction: column;  
+	flex-wrap: wrap;
+	flex-basis: 100%;
+	align-items: center;
+    width: 100%;
+    
+        ul li {
+        display: inline-block;
+	    margin-top: 1.5rem;
+        text-decoration: none;
+        align-items: center;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+            :hover {
+            transform: scale(1.5);
+            }
+        }
+    }   
+
+
+
+.AlineacionLogo {
+	padding-top: 5rem;
+}
+
+.BajadaHome {
+    @include tipografia($tsecundaria, 1.5rem, 400, $amarillo);
+    padding-top: 3rem; }
+
+h6 {
+    @include tipografia($tsecundaria, 1.5rem, 400, $blanco);
+    margin: 3rem;
+    padding-bottom: 2rem;
+    align-items: center;
+}
+

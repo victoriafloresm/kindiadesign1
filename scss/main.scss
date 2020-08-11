@@ -1,0 +1,70 @@
+html { 
+	font-size: 62.5%; }
+
+// reseteo
+* { margin: 0; padding: 0; box-sizing: 0;}
+
+// variables colores
+$violeta: #4C257E;
+$amarillo: #FCC602;
+$gris: #EDEDED;
+$gris2: #62626262;
+$blanco: #fcfcfc;
+
+// variables tipografia
+$tprincipal:barlow condensed;
+$tsecundaria:montserrat;
+
+// mixing
+@mixin tipografia($fuente, $tamano, $peso, $color) {
+    font-family: $fuente;
+    font-size: $tamano;
+    font-weight:$peso;
+    color: $color; }
+    
+
+%subtitulo {
+    @include tipografia($tprincipal, 4.5rem, 600, $violeta);
+    text-transform:uppercase; }
+
+
+
+
+// seccion violeta general
+
+.FondoVioleta {
+    background-image: linear-gradient(to left,#11166B,#7E5BAF); }
+
+h1 {
+    @include tipografia ($tsecundaria, 2.2rem, 200, $blanco);
+    padding-top: 5rem; }
+
+h2 { 
+    @include tipografia ($tprincipal, 13rem, 700, $blanco);
+    text-transform: uppercase;
+        &:hover {
+        text-decoration: none; }
+    }
+
+h3 {
+    @include tipografia ($tsecundaria, 2.2rem, 300, $blanco);
+	letter-spacing: 0.1rem; }
+
+.DivFlecha {
+	position: relative;
+	animation-name: MovimientoFlecha2;
+	animation-duration: 1s;
+	animation-iteration-count: infinite; }
+
+@keyframes MovimientoFlecha2 {
+    0%   {top: 0px;}
+	100% {top: 30px;} }
+
+
+
+
+
+
+@import "home","nosotros","servicios","porfolio","contacto","header","footer","mediaqueries";
+
+

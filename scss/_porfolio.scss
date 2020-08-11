@@ -1,0 +1,157 @@
+
+// reseteo
+* { margin: 0; padding: 0; box-sizing: 0;}
+
+.MenuPorfolioA {
+    @extend %subtitulo;
+    font-size: 2rem;
+    list-style: none; 
+    text-decoration: none;
+    inline-size: 1rem;
+    line-height: 4rem;
+    padding: 3rem 0 3rem 0;
+     &:hover {
+         color: $amarillo;
+         text-decoration: none;
+     }
+    
+}
+
+
+
+.MenuPorfolio {
+	display: inline-block;
+	list-style: none;
+}
+
+.TextoMenuPorfolio {
+	@include tipografia($tprincipal, 2.5rem, 500, $gris2);
+	text-transform: uppercase;
+	padding-left: 3rem;
+	padding-right: 3rem;
+		&:hover {
+			color: $violeta;
+			text-decoration: none;
+		}
+
+}
+
+
+#DivF {
+	padding-left: 0px;
+	padding-right: 0px;
+}	
+
+.AnchoFotosPorfolio {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+    &:hover {
+        filter: opacity(.5);
+		transition:all .5s ease-in-out;
+		transform: scale(1.25);
+		filter: blur(2px);
+    }
+
+.ContenedorImg {
+	overflow: hidden;
+}
+
+.ContenedorImg::before {
+	content:"" ;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.ContenedorImg:hover::before {
+	background: $violeta;
+	opacity: 0.7;
+	transition: all .3s;
+	z-index: 2; }
+
+.TextoTrabajo {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 3;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.Titulo {
+	@include tipografia($tprincipal, 4.5rem, 500, $amarillo);
+	text-transform: uppercase;
+	position: relative;
+	left: 100%;
+	transition: all .5s;}
+
+.ContenedorImg:hover .Titulo {
+	left: 0;
+	animation-delay: .3s;
+	transition: all .5s;}
+
+.Bajada1 {
+	@include tipografia($tsecundaria, 2rem, 600, $blanco); 
+	position: relative;
+	right: 100%;
+	transition: all .5s}
+
+.ContenedorImg:hover .Bajada1 {
+	right: 0; 
+	animation-delay: .3s;
+	transition: all .5s; }
+
+.Bajada2 {
+	@include tipografia($tprincipal, 2rem, 300, $blanco); 
+	position: relative;
+	left: 100%;
+	transition: all .5s}
+
+.ContenedorImg:hover .Bajada2 {
+	left: 0; 
+	animation-delay: .3s;
+	transition: all .5s; }
+
+
+
+
+
+.ContenedorTextoFinal {
+	background-color: $amarillo; }
+
+.TextoFinal { 
+    @extend %subtitulo;
+    color:$blanco;
+	padding:5rem 0 5rem 0 }
+
+
+
+
+
+.PreguntaFinal {
+	@include tipografia ($tsecundaria, 2.5rem, 400, $amarillo);
+	&:hover {
+		color:$violeta;
+		text-decoration: none;}
+	 
+	}
+	
+
+.BajadaFinal {
+	@extend %subtitulo;
+	color:$amarillo;
+	&:hover {
+		color:$violeta;
+		text-decoration: none;} }
+
+
+
+

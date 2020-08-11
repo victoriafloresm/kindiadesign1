@@ -1,0 +1,113 @@
+
+
+.GridFotosHome {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas:
+	"foto1 foto1 foto2 foto2"
+	"foto1 foto1 foto3 foto4";
+	grid-row-gap: 0px; }
+
+.foto1{
+	grid-area: foto1; }
+.foto2{
+	grid-area: foto2; }
+.foto3{
+	grid-area: foto3; }
+.foto4{
+	grid-area: foto4; }
+
+.AnchoFotosHome {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+    display: block;
+    color: $violeta;
+   
+}
+
+.ColorImg {
+    background: $violeta; 
+        &:hover {
+            filter: grayscale(0%); 
+            transition:all .5s ease-in-out;
+        }
+        
+}
+
+
+
+.ContenedorImgP {overflow:hidden;}
+
+.TituloHome {
+    @include tipografia($tprincipal, 5rem, 400, $amarillo);
+}
+
+.TextoHome {
+    @include tipografia($tsecundaria, 2rem, 500, $violeta);
+    }
+
+.TextoHome2 {
+    @include tipografia($tsecundaria, 1.5rem, 500, $violeta);
+    }
+    
+
+
+
+h4 {
+    @extend %subtitulo }
+
+.BajadaEmpresas {
+    @include tipografia($tsecundaria, 2rem, 500, $violeta);
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+    
+     
+     
+.LogosEmpresas {
+        height: 100px;
+        width: 200px;
+
+        &:hover {
+        transform: scale(1.2);
+        }
+    }
+    
+// carrousel
+
+.FondoCarrousel {
+    width: 100%;
+    height: 450px; }
+
+h5 { 
+    @extend %subtitulo;
+    color:$blanco; }
+
+.TextoTestimonios {
+    @include tipografia($tsecundaria,2.5rem, 400, $blanco); }
+
+.FirmaTestimonios {
+    @include tipografia ($tsecundaria, 2.5rem, 600, $blanco);
+    padding-left: 6rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    letter-spacing: 1px; }
+
+
+.UbicacionEst {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.NumHome {
+    @include tipografia ($tprincipal, 12rem, 400, $amarillo);
+}
+
+.BNumHome {
+    @include tipografia ($tsecundaria, 4rem, 400, $amarillo);
+}

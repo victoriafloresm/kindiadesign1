@@ -1,0 +1,494 @@
+html {
+  font-size: 62.5%; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0; }
+
+h4, h5, .MenuPorfolioA, .TextoFinal, .BajadaFinal {
+  font-family: barlow condensed;
+  font-size: 4.5rem;
+  font-weight: 600;
+  color: #4C257E;
+  text-transform: uppercase; }
+
+.FondoVioleta {
+  background-image: linear-gradient(to left, #11166B, #7E5BAF); }
+
+h1 {
+  font-family: montserrat;
+  font-size: 2.2rem;
+  font-weight: 200;
+  color: #fcfcfc;
+  padding-top: 5rem; }
+
+h2 {
+  font-family: barlow condensed;
+  font-size: 13rem;
+  font-weight: 700;
+  color: #fcfcfc;
+  text-transform: uppercase; }
+  h2:hover {
+    text-decoration: none; }
+
+h3 {
+  font-family: montserrat;
+  font-size: 2.2rem;
+  font-weight: 300;
+  color: #fcfcfc;
+  letter-spacing: 0.1rem; }
+
+.DivFlecha {
+  position: relative;
+  animation-name: MovimientoFlecha2;
+  animation-duration: 1s;
+  animation-iteration-count: infinite; }
+
+@keyframes MovimientoFlecha2 {
+  0% {
+    top: 0px; }
+  100% {
+    top: 30px; } }
+
+.GridFotosHome {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "foto1 foto1 foto2 foto2" "foto1 foto1 foto3 foto4";
+  grid-row-gap: 0px; }
+
+.foto1 {
+  grid-area: foto1; }
+
+.foto2 {
+  grid-area: foto2; }
+
+.foto3 {
+  grid-area: foto3; }
+
+.foto4 {
+  grid-area: foto4; }
+
+.AnchoFotosHome {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  color: #4C257E; }
+
+.ColorImg {
+  background: #4C257E; }
+  .ColorImg:hover {
+    filter: grayscale(0%);
+    transition: all .5s ease-in-out; }
+
+.ContenedorImgP {
+  overflow: hidden; }
+
+.TituloHome {
+  font-family: barlow condensed;
+  font-size: 5rem;
+  font-weight: 400;
+  color: #FCC602; }
+
+.TextoHome {
+  font-family: montserrat;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #4C257E; }
+
+.TextoHome2 {
+  font-family: montserrat;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #4C257E; }
+
+.BajadaEmpresas {
+  font-family: montserrat;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #4C257E;
+  text-align: center;
+  padding-bottom: 3rem; }
+
+.LogosEmpresas {
+  height: 100px;
+  width: 200px; }
+  .LogosEmpresas:hover {
+    transform: scale(1.2); }
+
+.FondoCarrousel {
+  width: 100%;
+  height: 450px; }
+
+h5 {
+  color: #fcfcfc; }
+
+.TextoTestimonios {
+  font-family: montserrat;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #fcfcfc; }
+
+.FirmaTestimonios {
+  font-family: montserrat;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #fcfcfc;
+  padding-left: 6rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  letter-spacing: 1px; }
+
+.UbicacionEst {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center; }
+
+.NumHome {
+  font-family: barlow condensed;
+  font-size: 12rem;
+  font-weight: 400;
+  color: #FCC602; }
+
+.BNumHome {
+  font-family: montserrat;
+  font-size: 4rem;
+  font-weight: 400;
+  color: #FCC602; }
+
+.TextoNosotros {
+  font-family: montserrat;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #4C257E;
+  padding-top: 3rem; }
+
+.FondoEquipo {
+  background-color: #EDEDED; }
+
+.NombresEquipo {
+  font-family: barlow condensed;
+  font-size: 4rem;
+  font-weight: 400;
+  color: #FCC602;
+  line-height: 4rem;
+  padding-top: 1rem;
+  text-transform: uppercase; }
+
+.Puestos {
+  font-family: montserrat;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #606060;
+  padding-top: 1rem; }
+
+.FondoGris {
+  background-color: #EDEDED; }
+
+.NumServicio {
+  font-family: montserrat;
+  font-size: 6rem;
+  font-weight: 200;
+  color: #FCC602;
+  padding-top: 3rem; }
+
+.Servicio {
+  font-family: montserrat;
+  font-size: 6rem;
+  font-weight: 500;
+  color: #FCC602;
+  padding-top: 3rem; }
+
+.ContenedorDesServicio {
+  width: 500px;
+  height: 200px; }
+
+.DescripcionServicio {
+  font-family: montserrat;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #4C257E; }
+
+.Porfolio {
+  font-family: montserrat;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #FCC602;
+  text-transform: uppercase; }
+  .Porfolio:hover {
+    list-style: none;
+    text-decoration: none;
+    font-weight: 600;
+    color: #FCC602;
+    transform: scale(2); }
+
+.Listado {
+  font-family: montserrat;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #4C257E;
+  padding-top: 5rem;
+  padding-bottom: 3rem; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0; }
+
+.MenuPorfolioA {
+  font-size: 2rem;
+  list-style: none;
+  text-decoration: none;
+  inline-size: 1rem;
+  line-height: 4rem;
+  padding: 3rem 0 3rem 0; }
+  .MenuPorfolioA:hover {
+    color: #FCC602;
+    text-decoration: none; }
+
+.MenuPorfolio {
+  display: inline-block;
+  list-style: none; }
+
+.TextoMenuPorfolio {
+  font-family: barlow condensed;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #62626262;
+  text-transform: uppercase;
+  padding-left: 3rem;
+  padding-right: 3rem; }
+  .TextoMenuPorfolio:hover {
+    color: #4C257E;
+    text-decoration: none; }
+
+#DivF {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.AnchoFotosPorfolio {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; }
+  .AnchoFotosPorfolio:hover {
+    filter: opacity(0.5);
+    transition: all .5s ease-in-out;
+    transform: scale(1.25);
+    filter: blur(2px); }
+
+.ContenedorImg {
+  overflow: hidden; }
+
+.ContenedorImg::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; }
+
+.ContenedorImg:hover::before {
+  background: #4C257E;
+  opacity: 0.7;
+  transition: all .3s;
+  z-index: 2; }
+
+.TextoTrabajo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.Titulo {
+  font-family: barlow condensed;
+  font-size: 4.5rem;
+  font-weight: 500;
+  color: #FCC602;
+  text-transform: uppercase;
+  position: relative;
+  left: 100%;
+  transition: all .5s; }
+
+.ContenedorImg:hover .Titulo {
+  left: 0;
+  animation-delay: .3s;
+  transition: all .5s; }
+
+.Bajada1 {
+  font-family: montserrat;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fcfcfc;
+  position: relative;
+  right: 100%;
+  transition: all .5s; }
+
+.ContenedorImg:hover .Bajada1 {
+  right: 0;
+  animation-delay: .3s;
+  transition: all .5s; }
+
+.Bajada2 {
+  font-family: barlow condensed;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #fcfcfc;
+  position: relative;
+  left: 100%;
+  transition: all .5s; }
+
+.ContenedorImg:hover .Bajada2 {
+  left: 0;
+  animation-delay: .3s;
+  transition: all .5s; }
+
+.ContenedorTextoFinal {
+  background-color: #FCC602; }
+
+.TextoFinal {
+  color: #fcfcfc;
+  padding: 5rem 0 5rem 0; }
+
+.PreguntaFinal {
+  font-family: montserrat;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #FCC602; }
+  .PreguntaFinal:hover {
+    color: #4C257E;
+    text-decoration: none; }
+
+.BajadaFinal {
+  color: #FCC602; }
+  .BajadaFinal:hover {
+    color: #4C257E;
+    text-decoration: none; }
+
+.TextoFormulario {
+  font-family: montserrat;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #4C257E; }
+
+.form-control:focus {
+  border-color: #FCC602; }
+
+.BotonC {
+  border: none;
+  padding: 10px;
+  /*espacio alrededor texto*/
+  background-color: #4C257E;
+  text-transform: uppercase;
+  border-radius: 20px;
+  font-family: montserrat;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fcfcfc; }
+  .BotonC:hover {
+    background-color: #FCC602;
+    color: #fcfcfc;
+    text-decoration: none;
+    border: none; }
+
+.AnimacionLogo {
+  animation-duration: 4s;
+  animation-name: aparecer; }
+
+@keyframes aparecer {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+header {
+  background-color: #fcfcfc; }
+  header div ul li {
+    font-family: barlow condensed;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #4C257E;
+    text-transform: uppercase; }
+
+#ColorMenu {
+  color: #4C257E; }
+  #ColorMenu:hover {
+    color: #FCC602;
+    transform: scale(1.1); }
+
+#Active {
+  color: #FCC602; }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  align-items: center;
+  width: 100%; }
+  footer ul li {
+    display: inline-block;
+    margin-top: 1.5rem;
+    text-decoration: none;
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem; }
+    footer ul li :hover {
+      transform: scale(1.5); }
+
+.AlineacionLogo {
+  padding-top: 5rem; }
+
+.BajadaHome {
+  font-family: montserrat;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #FCC602;
+  padding-top: 3rem; }
+
+h6 {
+  font-family: montserrat;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #fcfcfc;
+  margin: 3rem;
+  padding-bottom: 2rem;
+  align-items: center; }
+
+@media (max-width: 576px) {
+  .AlineacionSM {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  h2 {
+    font-size: 8rem; }
+  h3 {
+    font-size: 2.2rem; }
+  h4 {
+    font-size: 3rem; }
+  .LogosEmpresas {
+    height: 75px;
+    width: 150px; }
+  .TextoNosotros {
+    font-size: 3rem; }
+  #Ocultar {
+    display: none; }
+  .Servicio {
+    font-size: 5rem; }
+  .Listado {
+    font-size: 2rem; }
+  .AlineacionServicios {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center; } }

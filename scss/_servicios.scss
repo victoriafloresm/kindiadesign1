@@ -1,0 +1,43 @@
+
+.FondoGris {
+    background-color: $gris;
+     }
+
+.NumServicio {
+    @include tipografia ($tsecundaria, 6rem, 200, $amarillo);
+    padding-top: 3rem;
+    }
+
+.Servicio {
+    @include tipografia ($tsecundaria, 6rem, 500, $amarillo);
+    padding-top: 3rem;
+    }
+
+.ContenedorDesServicio {
+    width: 500px;
+    height: 200px;
+}
+
+.DescripcionServicio {
+    @include tipografia ($tsecundaria, 2rem, 400, $violeta);
+    }
+
+.Porfolio {
+    @include tipografia ($tsecundaria, 2rem, 400, $amarillo);
+    text-transform: uppercase;
+    
+    &:hover {
+        list-style: none;
+        text-decoration: none;
+        font-weight: 600;
+        color: $amarillo;
+        transform: scale(2);
+        }
+    }
+
+.Listado {
+    @include tipografia ($tsecundaria, 2.5rem, 400, $violeta);
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+    

@@ -1,0 +1,16 @@
+
+.TextoNosotros {    
+    @include tipografia($tsecundaria, 3rem, 400, $violeta);
+    padding-top:3rem; }
+
+.FondoEquipo { background-color: $gris; }
+
+.NombresEquipo {
+    @include tipografia($tprincipal, 4rem, 400, $amarillo);
+	line-height: 4rem;
+	padding-top: 1rem;
+	text-transform: uppercase; }
+
+.Puestos {
+    @include tipografia($tsecundaria, 2rem, 300,#606060);
+	padding-top: 1rem; }
