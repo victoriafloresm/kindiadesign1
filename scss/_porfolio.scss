@@ -132,6 +132,11 @@
     color:$blanco;
 	padding:5rem 0 5rem 0 }
 
+.TextDecoration {
+	:hover {
+	text-decoration: none; }
+}
+
 
 
 
@@ -148,10 +153,9 @@
 .BajadaFinal {
 	@extend %subtitulo;
 	color:$amarillo;
-	&:hover {
-		color:$violeta;
-		text-decoration: none;} }
-
-
-
+		&:hover {
+			color:$violeta;
+			text-decoration: none;
+		} 
+	}
 
